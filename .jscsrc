@@ -2,5 +2,7 @@
   "preset": "airbnb",
   "esnext": true,
   "requireCamelCaseOrUpperCaseIdentifiers": "ignoreProperties",
-  "requirePaddingNewLinesAfterBlocks": false
+  "requirePaddingNewLinesAfterBlocks": {
+    "allExcept": ["inCallExpressions", "inNewExpressions", "inArrayExpressions", "inProperties"]
+  }
 }
