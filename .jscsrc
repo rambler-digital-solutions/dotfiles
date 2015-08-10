@@ -1,8 +1,0 @@
-{
-  "preset": "airbnb",
-  "esnext": true,
-  "requireCamelCaseOrUpperCaseIdentifiers": "ignoreProperties",
-  "requirePaddingNewLinesAfterBlocks": {
-    "allExcept": ["inCallExpressions", "inNewExpressions", "inArrayExpressions", "inProperties"]
-  }
-}
