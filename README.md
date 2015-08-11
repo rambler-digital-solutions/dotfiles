@@ -24,9 +24,9 @@ Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
 
 3. in project dir .eslintrc  must contains
 
-    `{`
-        `"extends": "eslint-config-rambler"`
-    `}`
+    ```{
+        "extends": "eslint-config-rambler"
+    }```
 
 # Tested in:
 
