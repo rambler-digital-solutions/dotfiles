@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/rambler-digital-solutions/dotfiles/issues"
   },
-  "homepage": "https://github.com/rambler-digital-solutions/dotfiles"
+  "homepage": "https://github.com/rambler-digital-solutions/dotfiles",
+  "dependencies": {
+    "babel-eslint": "^4.0.5"
+  }
 }
