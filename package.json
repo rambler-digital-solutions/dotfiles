@@ -1,5 +1,5 @@
 {
-  "name": "rambler-dotfiles",
+  "name": "eslint-config-rambler",
   "version": "1.0.0",
   "description": "Dotfiles for rambler projects",
   "scripts": {
