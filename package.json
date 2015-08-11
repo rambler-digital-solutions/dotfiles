@@ -20,7 +20,7 @@
     "url": "https://github.com/rambler-digital-solutions/dotfiles/issues"
   },
   "homepage": "https://github.com/rambler-digital-solutions/dotfiles",
-  "devDependencies": {
+  "dependencies": {
     "babel-eslint": "^4.0.5",
     "eslint": "^1.1.0"
   }
