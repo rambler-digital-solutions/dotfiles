@@ -1,5 +1,5 @@
 {
-  "name": "rambler-dotfiles",
+  "name": "eslint-config-rambler",
   "version": "1.0.0",
   "description": "Dotfiles for rambler projects",
   "scripts": {
@@ -14,7 +14,10 @@
     "rambler",
     "kit"
   ],
-  "author": "Michael Chernobrov <m.chernobrov@rambler-co.ru>",
+  "author": {
+    "name": "Michael Chernobrov",
+    "email": "m.chernobrov@rambler-co.ru"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/rambler-digital-solutions/dotfiles/issues"
@@ -22,6 +25,15 @@
   "homepage": "https://github.com/rambler-digital-solutions/dotfiles",
   "dependencies": {
     "babel-eslint": "^4.0.5",
-    "eslint": "^1.1.0"
-  }
+    "eslint": "^1.1.0",
+    "strip-json-comments": "1.0.2"
+  },
+  "gitHead": "02b2ef8d09d67b6cbc4172902a081961d2bc315c",
+  "readme": "# dotfiles\n\nRambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!\n",
+  "readmeFilename": "README.md",
+  "_id": "rambler-dotfiles@1.0.0",
+  "_shasum": "84cff8d6c87a5a3ea83ead31008d0711ef21cb58",
+  "_from": "git://github.com/rambler-digital-solutions/dotfiles.git#master",
+  "_resolved": "git://github.com/rambler-digital-solutions/dotfiles.git#02b2ef8d09d67b6cbc4172902a081961d2bc315c",
+  "_fromGithub": true
 }
