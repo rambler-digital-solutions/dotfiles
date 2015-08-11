@@ -15,13 +15,14 @@
     "rambler",
     "kit"
   ],
-  "author": "Michael Chernobrov <m.chrenobrov@rambler-co.ru>",
+  "author": "Michael Chernobrov <m.chernobrov@rambler-co.ru>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/rambler-digital-solutions/dotfiles/issues"
   },
   "homepage": "https://github.com/rambler-digital-solutions/dotfiles",
-  "dependencies": {
-    "babel-eslint": "^4.0.5"
+  "devDependencies": {
+    "babel-eslint": "^4.0.5",
+    "eslint": "^1.1.0"
   }
 }
