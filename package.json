@@ -1,0 +1,24 @@
+{
+  "name": "rambler-dotfiles",
+  "version": "1.0.0",
+  "description": "Dotfiles for rambler projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rambler-digital-solutions/dotfiles.git"
+  },
+  "keywords": [
+    "dotfiles",
+    "rambler",
+    "kit"
+  ],
+  "author": "Michael Chernobrov <m.chrenobrov@rambler-co.ru>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rambler-digital-solutions/dotfiles/issues"
+  },
+  "homepage": "https://github.com/rambler-digital-solutions/dotfiles"
+}
