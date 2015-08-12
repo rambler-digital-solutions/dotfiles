@@ -24,10 +24,10 @@ Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
 3. In project dir .eslintrc must contains
 
     ```
-    { "extends": "./node_modules/eslint-config-rambler/.eslintrc" }
+    { "extends": "eslint-config-rambler" }
     ```
 
-    >*in Sublime Text use only relative path
+    >*only for PyCharm
 
 4. Copy .editorconfig to project dir
 
@@ -48,7 +48,13 @@ Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
     * SublimeLinter-contrib-eslint ([full instructions](https://github.com/roadhump/SublimeLinter-eslint#plugin-installation))
     * EditorConfig ([EditorConfig](https://github.com/sindresorhus/editorconfig-sublime#install))
 
-3. Restart ST
+3. In project dir .eslintrc must contains
+
+      ```
+      { "extends": "./node_modules/eslint-config-rambler/.eslintrc" }
+      ```
+
+4. Restart ST
 
 ## Packages for Atom
 
@@ -71,7 +77,7 @@ Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
 
     or through **Preferences → Install → Install Pacages** for linter, linter-eslint and editorconfig
 
-3. Restart ST
+3. Restart Atom
 
 # Tested in:
 
