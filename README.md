@@ -25,6 +25,23 @@ Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
 
 4. Copy .editorconfig to project dir
 
+## Packages for Sublime Text 3
+
+1. Will need installed npm packages
+
+    ```
+        npm install -g eslint
+        npm install -g babel-eslint
+    ```
+
+2. Install plugins
+
+    SublimeLinter ([full instructions](http://sublimelinter.readthedocs.org/en/latest/installation.html))
+    SublimeLinter-contrib-eslint ([full instructions](https://github.com/roadhump/SublimeLinter-eslint#plugin-installation))
+
+3. Restart ST
+
 # Tested in:
 
+- Sublime Text 3
 - PyCharm 4.0.6
