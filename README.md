@@ -36,11 +36,11 @@ Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
 1. Will need installed npm packages
 
     ```
-    npm install eslint
-    npm install babel-eslint
+    npm install -g eslint
+    npm install -g babel-eslint
     ```
 
-    or run `npm install` after installation ssh on productions 
+    or run `npm install` after installation ssh on productions
 
 2. Install plugins
 
@@ -55,9 +55,11 @@ Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
 1. Will need installed npm packages
 
     ```
-    npm install -g eslint
-    npm install -g babel-eslint
+    npm install eslint
+    npm install babel-eslint
     ```
+
+    or run `npm install` after installation ssh on productions
 
 2. Install plugins
 
