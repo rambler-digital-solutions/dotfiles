@@ -5,32 +5,43 @@
 
 Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
 
+# Installations
 
-# Instalation
+## Installation ssh on prodactions
 
-1. to package.json add
+1. To package.json add
+
+    ```"eslint-config-rambler": "https://github.com/rambler-digital-solutions/dotfiles.git#master"```
+
+2. Type in project dir
+
+    ```npm i```
+
+3. In project dir .eslintrc must contains
+
+    ```{ "extends": "./node_modules/eslint-config-rambler/.eslintrc" }```
+
+    >*in Sublime Text use only relative path
+
+4. Copy .editorconfig to project dir
+
+## Packages for Sublime Text 3
+
+1. Will need installed npm packages
 
     ```
-    "eslint-config-rambler": "https://github.com/rambler-digital-solutions/dotfiles.git#master"
+        npm install -g eslint
+        npm install -g babel-eslint
     ```
 
-    >*ssh on prodactions blocked by admins*
+2. Install plugins
 
-2. type in project dir
+    SublimeLinter ([full instructions](http://sublimelinter.readthedocs.org/en/latest/installation.html))
+    SublimeLinter-contrib-eslint ([full instructions](https://github.com/roadhump/SublimeLinter-eslint#plugin-installation))
 
-    ```
-    npm i
-    ```
-
-3. in project dir .eslintrc  must contains
-
-    ```{
-        "extends": "eslint-config-rambler"
-    }```
-
-4. copy .editorconfig to project dir
-
+3. Restart ST
 
 # Tested in:
 
-- PyCharm 4.0.6 (eslint from project dir)
+- Sublime Text 3
+- PyCharm 4.0.6
