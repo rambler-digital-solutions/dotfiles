@@ -5,32 +5,26 @@
 
 Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
 
+# Installations
 
-# Instalation
+## Installation ssh on prodactions
 
-1. to package.json add
+1. To package.json add
 
-    ```
-    "eslint-config-rambler": "https://github.com/rambler-digital-solutions/dotfiles.git#master"
-    ```
+    ```"eslint-config-rambler": "https://github.com/rambler-digital-solutions/dotfiles.git#master"```
 
-    >*ssh on prodactions blocked by admins*
+2. Type in project dir
 
-2. type in project dir
+    ```npm i```
 
-    ```
-    npm i
-    ```
+3. In project dir .eslintrc must contains
 
-3. in project dir .eslintrc  must contains
+    ```{ "extends": "./node_modules/eslint-config-rambler/.eslintrc" }```
 
-    ```{
-        "extends": "eslint-config-rambler"
-    }```
+    >*in Sublime Text use only relative path
 
-4. copy .editorconfig to project dir
-
+4. Copy .editorconfig to project dir
 
 # Tested in:
 
-- PyCharm 4.0.6 (eslint from project dir)
+- PyCharm 4.0.6
