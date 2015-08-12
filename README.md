@@ -28,6 +28,9 @@ Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
         "extends": "eslint-config-rambler"
     }```
 
+4. copy .editorconfig to project dir
+
+
 # Tested in:
 
 - PyCharm 4.0.6 (eslint from project dir)
