@@ -70,15 +70,19 @@ Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
 ## Atom
 
 1. Will need installed npm packages is local
-
-       npm install eslint
-       npm install babel-eslint
+    
+    ```bash
+    npm install eslint
+    npm install babel-eslint
+    ```
 
 2. Install plugins
 
-       apm install linter
-       apm install linter-eslint
-       apm install editorconfig
+    ```bash
+    apm install linter
+    apm install linter-eslint
+    apm install editorconfig
+    ```   
 
   or through **Preferences → Install → Install Pacages** for linter, linter-eslint and editorconfig.
 
