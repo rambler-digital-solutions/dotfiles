@@ -9,11 +9,11 @@ insert_final_newline = true
 trim_trailing_whitespace = true
 
 # Developer files
-[*.{js, css, html, rb}, package.json, .travis.yml]
-indent_style = space
+[*.{js, css, html, rb, package.json, .travis.yml}]
 indent_style = space
 indent_size = 2
 
-# Markdown 
+# Markdown
 [*.md]
+indent_style = space
 indent_size = 4
