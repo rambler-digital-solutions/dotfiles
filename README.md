@@ -75,19 +75,11 @@ Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
 
 ## Vim
 
-<<<<<<< HEAD
 1. Install packages
 
     ```
     $ npm install -g eslint
     $ npm install -g babel-eslint
-=======
-1. Will need installed npm packages is local
-
-    ```bash
-    npm install eslint
-    npm install babel-eslint
->>>>>>> 918387851c04ba4530438196c4904c7959fcee0e
     ```
 
 2. Install vim-plug
@@ -97,7 +89,6 @@ Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
     ```
 
-<<<<<<< HEAD
 3. Add a vim-plug section to your `~/.vimrc`
 
     ```
@@ -109,15 +100,6 @@ Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
     Reload .vimrc and :PlugInstall to install plugins.
 
 4. Add to your `~/.vimrc`
-=======
-    ```bash
-    apm install linter
-    apm install linter-eslint
-    apm install editorconfig
-    ```
-
-  or through **Preferences → Install → Install Packages** for linter, linter-eslint and editorconfig.
->>>>>>> 918387851c04ba4530438196c4904c7959fcee0e
 
     ```
     set statusline+=%#warningmsg#
