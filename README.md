@@ -1,24 +1,24 @@
-# dotfiles
+# Rambler & Co dotfiles
 
 - .eslintrc
 - .editorconfig
 
 Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
 
-# Installations
+# How may i use it?
 
 ## Installation ssh on productions
 
-1. To package.json add line
+1. Add next line inside package.json
 
-    ```
+    ```json
     "eslint-config-rambler": "https://github.com/rambler-digital-solutions/dotfiles.git#master"
     ```
 
 2. Type in project dir
 
-    ```
-    npm i
+    ```bash
+    $ npm i
     ```
 
 3. Copy .editorconfig to project dir
@@ -27,9 +27,9 @@ Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
 
 1. Will need installed npm packages is global
 
-    ```
-    npm install -g eslint
-    npm install -g babel-eslint
+    ```bash
+    $ npm install -g eslint
+    $ npm install -g babel-eslint
     ```
 
 2. Install plugins
@@ -38,10 +38,12 @@ Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
     * SublimeLinter-contrib-eslint ([full instructions](https://github.com/roadhump/SublimeLinter-eslint#plugin-installation))
     * EditorConfig ([EditorConfig](https://github.com/sindresorhus/editorconfig-sublime#install))
 
-3. In project dir .eslintrc must contains
+3. Project directory .eslintrc file should contain
 
-      ```
-      { "extends": "./node_modules/eslint-config-rambler/.eslintrc" }
+      ```json
+      {
+          "extends": "./node_modules/eslint-config-rambler/.eslintrc"
+      }
       ```
 
 4. Restart ST
@@ -50,25 +52,27 @@ Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
 
 1. Will need installed npm packages is local
 
-    ```
-    npm install eslint
-    npm install babel-eslint
+    ```bash
+    $ npm install eslint
+    $ npm install babel-eslint
     ```
 
-2. Install plugins
+2. Plugins
 
-    ```
-    apm install linter
-    apm install linter-eslint
-    apm install editorconfig
+    ```bash
+    $ apm install linter
+    $ apm install linter-eslint
+    $ apm install editorconfig
     ```
 
     or through **Preferences → Install → Install Pacages** for linter, linter-eslint and editorconfig
 
-3. In project dir .eslintrc must contains
+3. Project directory .eslintrc file should contain
 
-    ```
-    { "extends": "./node_modules/eslint-config-rambler/.eslintrc" }
+    ```json
+    {
+        "extends": "./node_modules/eslint-config-rambler/.eslintrc"
+    }
     ```
 
 4. Restart Atom
