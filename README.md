@@ -7,56 +7,35 @@ Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
 
 # Install
 
-  ```bash
-  npm install https://github.com/rambler-digital-solutions/dotfiles.git --save-dev
-  ```
+    $ npm install https://github.com/rambler-digital-solutions/dotfiles.git --save-dev
 
 # Configure
 
-1. Create .eslintrc in the project root. This file must contains:
+1. Copy .editorconfig to project dir
+
+2. Create .eslintrc in the project root. This file must contains:
 
     Relative path (Sublime Text, Atom):
-
     ```json
     {
-      "extends": "./node_modules/eslint-config-rambler/.eslintrc"
+        "extends": "./node_modules/eslint-config-rambler/.eslintrc"
     }
     ```
 
     Package name (IntelliJ IDEA family)
-
     ```json
     {
-      "extends": "eslint-config-rambler"
+        "extends": "eslint-config-rambler"
     }
     ```
 
-2. Copy .editorconfig from package to the project root.
+### Sublime Text
 
+1. Install packages
 
-## IntelliJ IDEA
-
-1. Enable ESLint
-
-    Go **Preferences → Languages & Frameworks → JavaScript → Code Quality Tools → ESLint** and turn it on.
-
-    ![ESLint preferences](http://img.rl0.ru/pgc/o/55cc664a-3216-8745-3216-870cb3846216.photo.0.png)
-
-    You don't need to install ESLint globally, you can use ESLint installed with this package (./node_modules/eslint-config-rambler/node_modules/eslint).
-
-    Additionally, you must set path to Configuration file.
-
-2. Configure EditorConfig
-
-    EditorConfig must works automatically by default. But if it doesn't - enable EditorConfig plugin and restart IDE.
-
-## Sublime Text 3
-
-1. Will need installed npm packages
-
-    ```bash
-    npm install -g eslint
-    npm install -g babel-eslint
+    ```
+    $ npm install -g eslint
+    $ npm install -g babel-eslint
     ```
 
 2. Install plugins
@@ -65,32 +44,84 @@ Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
     * SublimeLinter-contrib-eslint ([full instructions](https://github.com/roadhump/SublimeLinter-eslint#plugin-installation))
     * EditorConfig ([EditorConfig](https://github.com/sindresorhus/editorconfig-sublime#install))
 
-3. Restart ST
+### Atom
 
-## Atom
+1. Install packages
 
-1. Will need installed npm packages is local
-    
-    ```bash
-    npm install eslint
-    npm install babel-eslint
+    ```
+    $ npm install eslint
+    $ npm install babel-eslint
     ```
 
 2. Install plugins
 
-    ```bash
-    apm install linter
-    apm install linter-eslint
-    apm install editorconfig
-    ```   
+    ```
+    $ apm install linter
+    $ apm install linter-eslint
+    $ apm install editorconfig
+    ```
 
-  or through **Preferences → Install → Install Pacages** for linter, linter-eslint and editorconfig.
+    or through **Preferences → Install → Install Pacages** for linter, linter-eslint and editorconfig
 
-3. Restart Atom
+## JetBrains editors with support Javascript (WebStorm, IDEA and etc.)
 
+1. Enable ESLint in **Preferences → Languages & Frameworks → JavaScript → Code Quality Tools → ESLint**.
+
+2. Set path in **ESLint package** as`/<project_root or project_node_modules>/node_modules/eslint-config-rambler/node_modules/eslint`.
+
+3. And set path in **Configuration file** as `/<project_root>/.eslintrc`.
+
+2. EditorConfig must works automatically by default. But if it doesn't, then enable EditorConfig plugin and restart IDE.
+
+## Vim
+
+1. Install packages
+
+    ```
+    $ npm install -g eslint
+    $ npm install -g babel-eslint
+    ```
+
+2. Install vim-plug
+
+    ```
+    $ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    ```
+
+3. Add a vim-plug section to your `~/.vimrc`
+
+    ```
+    call plug#begin()
+    Plug 'scrooloose/syntastic'
+    call plug#end()
+    ```
+
+    Reload .vimrc and :PlugInstall to install plugins.
+
+4. Add to your `~/.vimrc`
+
+    ```
+    set statusline+=%#warningmsg#
+    set statusline+=%{SyntasticStatuslineFlag()}
+    set statusline+=%*
+
+    let g:syntastic_always_populate_loc_list = 1
+    let g:syntastic_auto_loc_list = 1
+    let g:syntastic_check_on_open = 1
+    let g:syntastic_check_on_wq = 0
+
+    let g:syntastic_python_python_exec = '/path/to/python3'
+
+    let g:syntastic_python_checkers = ['pep8']
+    let g:syntastic_javascript_checkers = ['eslint']
+    let g:syntastic_javascript_eslint_args = "--no-eslintrc --config /<project_root>/.eslintrc"
+    ```
 
 # Tested in:
 
 - Sublime Text 3
 - Atom 1.0.7
-- PyCharm 4.0.6, IntelliJ IDEA 14
+- PyCharm 4.0.6
+- WebStrom 10.0.4
+- MacVim
