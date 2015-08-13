@@ -21,26 +21,16 @@ Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
     npm i
     ```
 
-3. In project dir .eslintrc must contains
-
-    ```
-    { "extends": "eslint-config-rambler" }
-    ```
-
-    >*only for PyCharm
-
-4. Copy .editorconfig to project dir
+3. Copy .editorconfig to project dir
 
 ## Packages for Sublime Text 3
 
-1. Will need installed npm packages
+1. Will need installed npm packages is global
 
     ```
     npm install -g eslint
     npm install -g babel-eslint
     ```
-
-    or run `npm install` after installation ssh on productions
 
 2. Install plugins
 
@@ -58,14 +48,12 @@ Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
 
 ## Packages for Atom
 
-1. Will need installed npm packages
+1. Will need installed npm packages is local
 
     ```
     npm install eslint
     npm install babel-eslint
     ```
-
-    or run `npm install` after installation ssh on productions
 
 2. Install plugins
 
@@ -77,9 +65,16 @@ Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
 
     or through **Preferences → Install → Install Pacages** for linter, linter-eslint and editorconfig
 
-3. Restart Atom
+3. In project dir .eslintrc must contains
+
+    ```
+    { "extends": "./node_modules/eslint-config-rambler/.eslintrc" }
+    ```
+
+4. Restart Atom
 
 # Tested in:
 
 - Sublime Text 3
+- Atom 1.0.7
 - PyCharm 4.0.6
