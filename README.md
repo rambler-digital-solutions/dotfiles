@@ -11,7 +11,7 @@ Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
 
 # Configure
 
-1. Copy .editorconfig to project dir (automatically hooks up in Idea, RubyMine and WebStorm, no additional tuning neede)
+1. Copy .editorconfig to project dir (automatically hooks up in Idea, RubyMine and WebStorm, no additional tuning needed)
 
 2. Create .eslintrc in the project root. This file must contains:
 
@@ -82,12 +82,17 @@ Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
     $ npm install -g babel-eslint
     ```
 
-2. Install vim-plug
+2. Install vim-plug & pathogen
 
     ```
     $ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+    $ mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+    $ curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
     ```
+
+    If you're using Windows, change all occurrences of ~/.vim to ~\vimfiles.
 
 3. Add a vim-plug section to your `~/.vimrc`
 
@@ -99,7 +104,22 @@ Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
 
     Reload .vimrc and :PlugInstall to install plugins.
 
-4. Add to your `~/.vimrc`
+4. Add pathogen section to '~/.vimrc'
+
+    ```
+    execute pathogen#infect()
+    syntax on
+    filetype plugin indent on
+    ```
+
+5. Clone editofconfig repo
+
+    ```
+    $ cd ~/.vim/bundle && \
+    $ git clone git://github.com/tpope/vim-sensible.git
+    ```
+
+6. Add to your `~/.vimrc`
 
     ```
     set statusline+=%#warningmsg#
