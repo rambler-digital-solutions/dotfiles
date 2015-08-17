@@ -11,7 +11,7 @@ Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
 
 # Configure
 
-1. Copy .editorconfig to project dir
+1. Copy .editorconfig to project dir (automatically hooks up in Idea, RubyMine and WebStorm, no additional tuning neede)
 
 2. Create .eslintrc in the project root. This file must contains:
 
