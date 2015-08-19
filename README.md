@@ -29,7 +29,7 @@ Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
     }
     ```
 
-### Sublime Text
+## Sublime Text
 
 1. Install packages
 
@@ -44,7 +44,7 @@ Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
     * SublimeLinter-contrib-eslint ([full instructions](https://github.com/roadhump/SublimeLinter-eslint#plugin-installation))
     * EditorConfig ([EditorConfig](https://github.com/sindresorhus/editorconfig-sublime#install))
 
-### Atom
+## Atom
 
 1. Install packages
 
@@ -63,11 +63,11 @@ Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
 
     or through **Preferences → Install → Install Pacages** for linter, linter-eslint and editorconfig
 
-## JetBrains editors with support Javascript (WebStorm, IDEA and etc.)
+## IntelliJ IDEA family (WebStorm, PyCharm, RubyMine, etc.), except IDEA Community Edition
 
 1. Enable ESLint in **Preferences → Languages & Frameworks → JavaScript → Code Quality Tools → ESLint**.
 
-2. Set path in **ESLint package** as`/<project_root or project_node_modules>/node_modules/eslint-config-rambler/node_modules/eslint`.
+2. Set path in **ESLint package** as`/<project_node_modules>/eslint-config-rambler/node_modules/eslint`.
 
 3. And set path in **Configuration file** as `/<project_root>/.eslintrc`.
 
@@ -144,4 +144,5 @@ Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
 - Atom 1.0.7
 - PyCharm 4.0.6
 - WebStrom 10.0.4
+- IDEA 15 EAP
 - MacVim
