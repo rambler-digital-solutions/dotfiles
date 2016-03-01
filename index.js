@@ -1,3 +1,5 @@
+// Depends
+
 var path = require('path');
 var stripComments = require('strip-json-comments');
 var fs = require('fs');

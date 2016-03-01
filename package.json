@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-rambler",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "Dotfiles for rambler projects",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -21,8 +21,8 @@
   },
   "homepage": "https://github.com/rambler-digital-solutions/dotfiles",
   "dependencies": {
-    "babel-eslint": "^4.0.5",
-    "strip-json-comments": "1.0.2",
-    "eslint": "^1.1.0"
+    "babel-eslint": "^4.1.8",
+    "eslint": "^1.10.3",
+    "strip-json-comments": "^1.0.2"
   }
 }
