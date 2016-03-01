@@ -1,4 +1,5 @@
 [![npm version](https://badge.fury.io/js/eslint-config-rambler.svg)](https://badge.fury.io/js/eslint-config-rambler)
+[![Build Status](https://travis-ci.org/rambler-digital-solutions/dotfiles.svg?branch=master)](https://travis-ci.org/rambler-digital-solutions/dotfiles)
 
 # dotfiles
 
