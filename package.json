@@ -3,7 +3,7 @@
   "version": "0.0.2",
   "description": "Dotfiles for rambler projects",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha -R spec ./test/index.js"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,9 @@
     "babel-eslint": "^4.1.8",
     "eslint": "^1.10.3",
     "strip-json-comments": "^1.0.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
   }
 }
