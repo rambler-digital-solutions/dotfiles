@@ -6,7 +6,6 @@ var exporter = require('../index.js');
 
 describe('eslint.index', function () {
   var expect = chai.expect;
-
   it('function should return object', function() {
     expect(exporter).to.be.an('object');
   });
