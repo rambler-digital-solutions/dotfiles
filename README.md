@@ -9,7 +9,7 @@ Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
 
 # Install
 
-    $ npm install https://github.com/rambler-digital-solutions/dotfiles.git --save-dev
+    $ npm i eslint-config-rambler --save-dev
 
 # Configure
 
