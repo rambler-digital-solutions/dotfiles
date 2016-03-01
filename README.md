@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/eslint-config-rambler.svg)](https://badge.fury.io/js/eslint-config-rambler)
+
 # dotfiles
 
 - .eslintrc
