@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-rambler",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Dotfiles for rambler projects",
   "scripts": {
     "test": "mocha -R spec ./test/index.js"
@@ -12,7 +12,8 @@
   "keywords": [
     "dotfiles",
     "rambler",
-    "kit"
+    "kit",
+    "eslint"
   ],
   "author": "Michael Chernobrov <m.chernobrov@rambler-co.ru>",
   "license": "MIT",
@@ -21,9 +22,9 @@
   },
   "homepage": "https://github.com/rambler-digital-solutions/dotfiles",
   "dependencies": {
-    "babel-eslint": "^4.1.8",
-    "eslint": "^1.10.3",
-    "strip-json-comments": "^1.0.2"
+    "babel-eslint": "^6.0.0",
+    "eslint": "^2.5.3",
+    "strip-json-comments": "^2.0.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
