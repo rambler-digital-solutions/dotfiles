@@ -39,13 +39,16 @@ Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
     ```
     $ npm install -g eslint
     $ npm install -g babel-eslint
+    $ npm install -g eslint-plugin-react
     ```
 
 2. Install plugins
 
-    * SublimeLinter ([full instructions](http://sublimelinter.readthedocs.org/en/latest/installation.html))
-    * SublimeLinter-contrib-eslint ([full instructions](https://github.com/roadhump/SublimeLinter-eslint#plugin-installation))
-    * EditorConfig ([EditorConfig](https://github.com/sindresorhus/editorconfig-sublime#install))
+    SublimeLinter ([full instructions](http://sublimelinter.readthedocs.org/en/latest/installation.html))
+
+    SublimeLinter-contrib-eslint ([full instructions](https://github.com/roadhump/SublimeLinter-eslint#plugin-installation))
+
+    EditorConfig ([EditorConfig](https://github.com/sindresorhus/editorconfig-sublime#install))
 
 ### Atom
 
@@ -54,6 +57,7 @@ Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
     ```
     $ npm install eslint
     $ npm install babel-eslint
+    $ npm install eslint-plugin-react
     ```
 
 2. Install plugins

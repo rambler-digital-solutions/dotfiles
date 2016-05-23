@@ -1,5 +1,6 @@
 {
   "parser": "babel-eslint",
+  "plugins": ["react"],
   "env": {                           // http://eslint.org/docs/user-guide/configuring.html#specifying-environments
     "browser": true,                 // browser global variables
     "node": true                     // node.js global variables and node.js-specific rules
@@ -171,6 +172,34 @@
     "spaced-comment": [2, "always",  {// http://eslint.org/docs/rules/spaced-comment
       "exceptions": ["-", "+"],
       "markers": ["=", "!"]           // space here to support sprockets directives
-    }]
+    }],
+
+    /**
+     * The rules for React
+     *
+     * Seeing all rules in https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/
+     */
+    "react/display-name": 0,
+    "react/jsx-boolean-value": 1,
+    "react/jsx-curly-spacing": [2, "never", {"allowMultiline": false}],
+    "react/jsx-max-props-per-line": [2, {"maximum": 2}],
+    "react/jsx-no-duplicate-props": 2,
+    "react/jsx-no-undef": 2,
+    "jsx-quotes": [2, "prefer-single"],
+    "react/jsx-sort-prop-types": 1,
+    "react/jsx-sort-props": 1,
+    "react/jsx-uses-react": 1,
+    "react/jsx-uses-vars": 1,
+    "react/no-danger": 1,
+    "react/no-did-mount-set-state": 2,
+    "react/no-did-update-set-state": 2,
+    "react/no-multi-comp": 2,
+    "react/no-unknown-property": 2,
+    "react/prop-types": [2, {"ignore": ["children", "items"]}],
+    "react/react-in-jsx-scope": 0,
+    "react/require-extension": 1,
+    "react/self-closing-comp": 1,
+    "react/sort-comp": 2,
+    "react/wrap-multilines": 2
   }
 }
