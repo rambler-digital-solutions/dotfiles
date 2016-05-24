@@ -4,9 +4,10 @@
 # dotfiles
 
 - .eslintrc
+- .stylintrc
 - .editorconfig
 
-Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
+Rambler&amp;Co Dotfiles for your javascripts and styles. Use the force, Luke!
 
 # Install
 
@@ -16,7 +17,9 @@ Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
 
 1. Copy .editorconfig to project dir (automatically hooks up in Idea, RubyMine and WebStorm, no additional tuning needed)
 
-2. Create .eslintrc in the project root. This file must contains:
+2. Copy .stylintrc to project directory
+
+3. Create .eslintrc in the project root. This file must contains:
 
     Relative path (Sublime Text, Atom):
     ```json
@@ -40,6 +43,7 @@ Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
     $ npm install -g eslint
     $ npm install -g babel-eslint
     $ npm install -g eslint-plugin-react
+    $ npm install -g stylint
     ```
 
 2. Install plugins
@@ -47,6 +51,8 @@ Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
     SublimeLinter ([full instructions](http://sublimelinter.readthedocs.org/en/latest/installation.html))
 
     SublimeLinter-contrib-eslint ([full instructions](https://github.com/roadhump/SublimeLinter-eslint#plugin-installation))
+
+    SublimeLinter-contrib-stylint ([full instructions](https://packagecontrol.io/packages/SublimeLinter-contrib-stylint))
 
     EditorConfig ([EditorConfig](https://github.com/sindresorhus/editorconfig-sublime#install))
 
@@ -58,6 +64,7 @@ Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
     $ npm install eslint
     $ npm install babel-eslint
     $ npm install eslint-plugin-react
+    $ npm install stylint
     ```
 
 2. Install plugins
@@ -65,10 +72,11 @@ Rambler&amp;Co Dotfiles for your javascripts. Use the force, Luke!
     ```
     $ apm install linter
     $ apm install linter-eslint
+    $ apm install linter-stylint
     $ apm install editorconfig
     ```
 
-    or through **Preferences → Install → Install Pacages** for linter, linter-eslint and editorconfig
+    or through **Preferences → Install → Install Packages** for linter, linter-eslint, linter-stylint and editorconfig
 
 ## JetBrains editors with support Javascript (WebStorm, IDEA and etc.)
 
