@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-rambler",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Dotfiles for rambler projects",
   "scripts": {
     "test": "mocha -R spec ./test/index.js"
@@ -22,8 +22,9 @@
   },
   "homepage": "https://github.com/rambler-digital-solutions/dotfiles",
   "dependencies": {
-    "babel-eslint": "^6.0.0",
-    "eslint": "^2.5.3",
+    "babel-eslint": "^6.0.4",
+    "eslint": "^2.10.2",
+    "eslint-plugin-react": "^5.1.1",
     "strip-json-comments": "^2.0.1"
   },
   "devDependencies": {
