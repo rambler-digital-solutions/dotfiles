@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-rambler",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Dotfiles for rambler projects",
   "scripts": {
     "test": "mocha -R spec ./test/index.js"
