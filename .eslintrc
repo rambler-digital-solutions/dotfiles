@@ -186,7 +186,7 @@
     "react/jsx-no-duplicate-props": 2,
     "react/jsx-no-undef": 2,
     "jsx-quotes": [2, "prefer-single"],
-    "react/jsx-sort-prop-types": 1,
+    "react/sort-prop-types": 1,
     "react/jsx-sort-props": 1,
     "react/jsx-uses-react": 1,
     "react/jsx-uses-vars": 1,

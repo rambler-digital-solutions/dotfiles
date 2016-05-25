@@ -13,7 +13,7 @@
   "none": "always", // prefers border none over border 0
   "parenSpace": "never", // prefers mixin($param) over mixin( $param )
   "placeholders": false, // doesn't check for placeholders
-  "prefixVarsWithDollar": "always", // prefers $var = 0 over var = 0
+  "prefixVarsWithDollar": false, // doesn't check for prefixing vars with dollar
   "quotePref": "single", // prefers $var = 'something' over $var = "something"
   "semicolons": "never", // prefers margin 0 over margin 0;
   "sortOrder": false, // doesn't check for sort order of properties
