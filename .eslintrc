@@ -1,6 +1,9 @@
 {
   "parser": "babel-eslint",
-  "plugins": ["react"],
+  "plugins": [
+    "react",
+    "import"
+  ],
   "env": {                           // http://eslint.org/docs/user-guide/configuring.html#specifying-environments
     "browser": true,                 // browser global variables
     "node": true                     // node.js global variables and node.js-specific rules
@@ -177,7 +180,7 @@
     /**
      * The rules for React
      *
-     * Seeing all rules in https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/
+     * See all rules in https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/
      */
     "react/display-name": 0,
     "react/jsx-boolean-value": 1,
@@ -187,7 +190,7 @@
     "react/jsx-no-undef": 2,
     "jsx-quotes": [2, "prefer-single"],
     "react/sort-prop-types": 1,
-    "react/jsx-sort-props": 1,
+    "react/jsx-sort-props": 0,
     "react/jsx-uses-react": 1,
     "react/jsx-uses-vars": 1,
     "react/no-danger": 1,
@@ -197,9 +200,35 @@
     "react/no-unknown-property": 2,
     "react/prop-types": [2, {"ignore": ["children", "items"]}],
     "react/react-in-jsx-scope": 0,
-    "react/require-extension": 1,
     "react/self-closing-comp": 1,
     "react/sort-comp": 2,
-    "react/wrap-multilines": 2
+    "react/jsx-wrap-multilines": 2,
+
+    /**
+     * The rules for import
+     *
+     * See all rules in https://github.com/benmosher/eslint-plugin-import#rules
+     */
+    "import/no-unresolved": 2,
+    "import/named": 2,
+    "import/default": 2,
+    "import/namespace": 2,
+    "import/no-restricted-paths": 2,
+    "import/export": 1,
+    "import/no-named-as-default": 1,
+    "import/no-named-as-default-member": 1,
+    "import/no-deprecated": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/no-mutable-exports": 1,
+    "import/no-commonjs": 0,
+    "import/no-amd": 1,
+    "import/no-nodejs-modules": 0,
+    "import/imports-first": 1,
+    "import/no-duplicates": 1,
+    "import/no-namespace": 1,
+    "import/extensions": [1, "always"],
+    "import/order": 0,
+    "import/newline-after-import": 1,
+    "import/prefer-default-export": 1
   }
 }
