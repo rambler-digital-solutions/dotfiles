@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-rambler",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Dotfiles for rambler projects",
   "scripts": {
     "test": "mocha -R spec ./test/index.js"
@@ -13,7 +13,8 @@
     "dotfiles",
     "rambler",
     "kit",
-    "eslint"
+    "eslint",
+    "stylint"
   ],
   "author": "Michael Chernobrov <m.chernobrov@rambler-co.ru>",
   "license": "MIT",
