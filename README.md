@@ -158,5 +158,9 @@ Rambler&amp;Co Dotfiles for your javascripts and styles. Use the force, Luke!
 - Sublime Text 3
 - Atom 1.0.7
 - PyCharm 4.0.6
-- WebStrom 10.0.4
+- WebStorm 10.0.4
 - MacVim
+
+## License
+
+[MIT](http://www.opensource.org/licenses/mit-license.php) © Rambler Digital Solutions
