@@ -21,17 +21,9 @@ Rambler&amp;Co Dotfiles for your javascripts and styles. Use the force, Luke!
 
 3. Create .eslintrc in the project root. This file must contains:
 
-    Relative path (Sublime Text, Atom):
     ```json
     {
-        "extends": "./node_modules/eslint-config-rambler/.eslintrc"
-    }
-    ```
-
-    Package name (IntelliJ IDEA family)
-    ```json
-    {
-        "extends": "eslint-config-rambler"
+        "extends": ["eslint-config-rambler", "./node_modules/eslint-config-rambler/.eslintrc"]
     }
     ```
 
