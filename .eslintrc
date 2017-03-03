@@ -176,6 +176,9 @@
       "exceptions": ["-", "+"],
       "markers": ["=", "!"]           // space here to support sprockets directives
     }],
+    "object-curly-spacing": [2, "always"], // http://eslint.org/docs/rules/object-curly-spacing
+    "array-bracket-spacing": [2, "never"], // http://eslint.org/docs/rules/array-bracket-spacing
+    "space-in-parens": [2, "never"],       // http://eslint.org/docs/rules/space-in-parens
 
     /**
      * The rules for React
