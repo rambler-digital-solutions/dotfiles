@@ -4,7 +4,7 @@ var a = function() {
   console.log(arguments);
 };
 
-a.prototype.test = function(param) {
+a.prototype.test = function (param) {
   return param;
 };
 

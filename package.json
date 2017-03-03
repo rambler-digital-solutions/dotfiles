@@ -23,14 +23,14 @@
   },
   "homepage": "https://github.com/rambler-digital-solutions/dotfiles",
   "dependencies": {
-    "babel-eslint": "^7.1.1",
-    "eslint": "^3.16.1",
-    "eslint-plugin-react": "^6.10.0",
-    "eslint-plugin-import": "^2.2.0",
-    "strip-json-comments": "^2.0.1"
+    "babel-eslint": "7.1.1",
+    "eslint": "3.16.1",
+    "eslint-plugin-react": "6.10.0",
+    "eslint-plugin-import": "2.2.0",
+    "strip-json-comments": "2.0.1"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^3.2.0"
+    "chai": "3.5.0",
+    "mocha": "3.2.0"
   }
 }
