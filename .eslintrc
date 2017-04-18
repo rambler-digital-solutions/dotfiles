@@ -2,7 +2,8 @@
   "parser": "babel-eslint",
   "plugins": [
     "react",
-    "import"
+    "import",
+    "compat"
   ],
   "env": {                           // http://eslint.org/docs/user-guide/configuring.html#specifying-environments
     "browser": true,                 // browser global variables
@@ -26,6 +27,7 @@
     "templateStrings": true
   },
   "rules": {
+    "compat/compat": 2,
 
     /**
      * Disabled by Rambler
