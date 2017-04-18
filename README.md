@@ -27,6 +27,8 @@ Rambler&amp;Co Dotfiles for your javascripts and styles. Use the force, Luke!
     }
     ```
 
+4. For using eslint-plugin-compat add [browserslist](https://github.com/ai/browserslist) section to your package.json
+
 ### Sublime Text
 
 1. Install packages
