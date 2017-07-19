@@ -15,8 +15,12 @@ describe('eslint.index', function() {
     expect(exporter).have.an.property('parser').is.equal('babel-eslint');
   });
 
-  it('function should contain `ecmaFeatures` attribute', function() {
-    expect(exporter).have.an.property('ecmaFeatures');
+  it('function should contain `parserOptions` attribute', function() {
+    expect(exporter).have.an.property('parserOptions');
+  });
+
+  it('function should contain `parserOptions.ecmaFeatures` attribute', function() {
+    expect(exporter.parserOptions).have.an.property('ecmaFeatures');
   });
 
   it('function should contain `rules` attribute', function() {
